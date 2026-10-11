@@ -1,0 +1,70 @@
+:root {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-synthesis: none;
+  font-weight: 400;
+  color: var(--ink);
+  background: var(--paper);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --rose-dark: #793e55;
+  --rose: #c66e87;
+  --rose-light: #f7e8ed;
+  --ink: #30272b;
+  --muted: #83747a;
+  --line: #ead9df;
+  --paper: #fffbfc;
+  --display: 'Bodoni Moda', Georgia, serif;
+  --sans: 'DM Sans', 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}
+
+body,
+button,
+input {
+  font-family: var(--sans);
+}
+
+button,
+input {
+  font-size: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+::selection {
+  background: #f1d5df;
+  color: var(--rose-dark);
+}
